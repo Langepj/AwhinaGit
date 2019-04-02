@@ -14,8 +14,8 @@ public class Factorials {
 	}
 
 	public static  long recursiveFactorial(int n) {
-		//FIXME: Your implementation here
-		return 0;
+		if (i <= 2 ) { return i; }
+		return i * recursiveFactorial(i-1);
 	}
 
 	public static  long streamFactorial(int n) {
@@ -30,6 +30,7 @@ public class Factorials {
 		}
 		else a = 10;
 		System.out.println(a+"! = " + iterFactorial(a));
+		System.out.println(a+"! = " + recursiveFactorial(a));
 	}
 
 
